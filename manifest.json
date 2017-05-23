@@ -1,0 +1,17 @@
+{
+    "name":"changeTitle",
+    "version":"0.0.32.2",
+    "manifest_version":2,
+    "description":"spider",
+    "content_scripts": [ {
+      "js": [ "static/js/jQuery.js","static/js/insert.js"],
+      "matches": [ "http://*/*", "https://*/*", "ftp://*/*", "file:///*" ],
+      "run_at": "document_start"
+   } ],
+    "browser_action":{
+        "default_icon":"icon.jpg",
+        "default_popup":"popup.html"
+    },
+    "permissions":["http://*/*", "https://*/*", "tabs" ,"bookmarks", "cookies", "storage"]
+
+}

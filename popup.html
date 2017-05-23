@@ -1,0 +1,75 @@
+        <!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+        <title>Getting Started Extension's Popup</title>
+        <link rel="stylesheet" type="text/css" href="/static/popup.css">
+
+        <script src = '/static/js/jQuery.js'></script>
+        <script src="popup.js"></script>
+    </head>
+    <body>
+        <p>其中：Y代表是；N代表非</p>
+        <ul class="section">
+            <li class="item">
+                <h2>1.是否修改页面名称和图标？</h2>
+                <div class="text-input-bl">
+                    <input type="text" class="text-input" name="changeTitle-input" placeholder="填写修改后页面名称">
+                </div>
+                <span class="radio">
+                    <input type="radio" name="changeTitle" value="1"><span>Y</span>
+                </span>
+                <span class="radio">
+                    <input type="radio" name="changeTitle" value="2" checked="checked"><span>N</span>
+                </span>
+                <button type="button"  id="changeTitle_btn" class="btn-ing">提交</button>  
+            </li>
+        </ul>
+        <p class="ext-more">其他功能<i class="more">展开&gt;&gt;</i></p>
+        <div class="more-list hide">
+            <div class="list-bl">
+                <ul>
+                    <li class="item">
+                        <h2>2.是否清理浏览器所有隐私数据？</h2>
+                        <span class="radio">
+                            <input type="radio" name="deleteAllCookie" value="1"><span>Y</span>
+                        </span>
+                        <span class="radio">
+                            <input type="radio" name="deleteAllCookie" value="2" checked="checked"><span>N</span>
+                        </span>
+                        <button type="button"  id="deleteAllCookie_btn" class="btn-ing">提交</button>
+                    </li>
+
+                    <li class="item">
+                        <h2>3.是否清理本页面隐私数据？</h2>
+                        <span class="radio">
+                            <input type="radio" name="deleteCookie" value="1"><span>Y</span>
+                        </span>
+                        <span class="radio">
+                            <input type="radio" name="deleteCookie" value="2" checked="checked"><span>N</span>
+                        </span>
+                        <button type="button"  id="deleteCookie_btn" class="btn-ing">提交</button>
+                    </li>
+                    <li class="item">
+                        <h2>4.是否修改本页面cookie？</h2>
+                        <div class="text-input-bl">
+                            <p class="tips">填写修改后cookie值与有效期(秒为单位,例：200，表示200秒)</p>
+                            <input type="text" name="editCookie-input-name" class="text-input" placeholder="请输入修改cookie的名称">
+                            <input type="text" name="editCookie-input" class="text-input" placeholder="请输入修改cookie的值">
+                            <input type="text" name="editCookie-input-domain" class="text-input" placeholder="请输入修改cookie的域名">
+                            <input type="text" name="editCookie-input-expires" class="text-input" placeholder="请输入修改cookie有效期">
+                        </div>
+                        <span class="radio">
+                            <input type="radio" name="editCookie" value="1"><span>Y</span>
+                        </span>
+                        <span class="radio">
+                            <input type="radio" name="editCookie" value="2" checked="checked"><span>N</span>
+                        </span>
+                        <button type="button"  id="editCookie_btn" class="btn-ing">提交</button>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </body>
+</html>
