@@ -1,8 +1,8 @@
 {
-    "name":"changeTitle",
+    "name":"ToolsForChromePage",
     "version":"0.0.32.2",
     "manifest_version":2,
-    "description":"spider",
+    "description":"tools for chrome page:cookie&&title",
     "content_scripts": [ {
       "js": [ "static/js/jQuery.js","static/js/insert.js"],
       "matches": [ "http://*/*", "https://*/*", "ftp://*/*", "file:///*" ],

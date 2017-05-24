@@ -5,11 +5,11 @@
 body {
     min-width: 357px;
     overflow-x: hidden;
-    background-color: #F5CADE;
+    background-color: #fff;
 }
 
 .more {
-    color: red;
+    color: #00d5ff;
     font-size: 16px;
     cursor: pointer;
     margin-left: 10px;
@@ -26,6 +26,7 @@ body {
 input {
     height: 20px;
     margin-bottom: 10px;
+    outline: none;
 }
 
 button {
@@ -60,23 +61,33 @@ button:active{
 }
 h2{
     margin: 10px 5px;
-    border-left: 3px solid #56ff00;
-    padding-left: 2px;
+    border-left: 4px solid #00adff;
+    padding-left: 4px;
 }
 .text-input{
     width: 150px;
     margin: 10px 0 0 15px;
+}
+.text-input:focus,.text-input:active{
+    outline: none;
+}
+.text-input:focus,.text-input:hover{
+    border: 2px solid #43aae6;
+}
+.text-input:active{
+    border: 2px solid #141bf1;
 }
 .radio{
     margin: 5px 0 0 10px;
 }
 .radio input{
     margin: 6px;
+    cursor: pointer;
 }
 .ext-more{
     height: 50px;
     line-height: 50px;
-    background-color: #f7bfd9;
-    padding-left: 50px;
+    background-color: #eef1ef;
+    padding-left: 80px;
     
 }
